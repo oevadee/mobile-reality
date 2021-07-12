@@ -1,0 +1,47 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .home__fourPanelSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .home__imagePanel {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+
+    .home__imagePanel__cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: lightblue;
+      opacity: 0.8;
+    }
+
+    h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
