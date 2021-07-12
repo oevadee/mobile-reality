@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
-import { Link } from 'react-router-dom';
 import './Button.scss';
+
+import { Link } from 'react-router-dom';
 
 interface Props {
   children: ReactNode;

@@ -1,17 +1,18 @@
 import React from 'react';
+
 import { useHistory, useParams } from 'react-router-dom';
 import { Box, Spinner, Text } from '@chakra-ui/react';
 import {
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
   TableCaption,
 } from '@chakra-ui/react';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { ICombinedReducers } from '../../state/store';
 import Button from '../../componenets/Button/Button';
 import { removeHouse } from '../../state/actions/housesActions';
@@ -29,8 +30,6 @@ const HouseDetails = () => {
   if (!houses) return <Spinner color='lightblue' />;
 
   const [propperHouse] = houses.filter((el) => el._id === id);
-
-  console.log(propperHouse);
 
   const handleDelete = (id: string) => {
     dispatch(removeHouse(id));

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   Table,
   Thead,
@@ -10,9 +11,10 @@ import {
   Box,
   Text,
 } from '@chakra-ui/react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import Button from '../../componenets/Button/Button';
 import { House } from '../../state/types/housesTypes';
-import { useDispatch, useSelector } from 'react-redux';
 import { removeHouse } from '../../state/actions/housesActions';
 import { ICombinedReducers } from '../../state/store';
 

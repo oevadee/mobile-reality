@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.scss';
+
 import BasicTextPanel from '../../componenets/BasicTextPanel/BasicTextPanel';
 
 const Home = () => {

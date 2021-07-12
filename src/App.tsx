@@ -1,14 +1,12 @@
 import React from 'react';
 
-import Home from './routes/Home/Home';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Houses from './routes/Houses/Houses';
-import HouseDetails from './routes/HouseDetails/HouseDetails';
 import { useQuery } from 'react-query';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
+
 import { setHouses } from './state/actions/housesActions';
-import HousesAdder from './routes/HousesAdder/HousesAdder';
+import { Home, HousesAdder, HouseDetails, Houses } from './routes';
 
 function App() {
   const dispatch = useDispatch();

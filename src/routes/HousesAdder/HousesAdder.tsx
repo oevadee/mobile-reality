@@ -1,11 +1,13 @@
-import { Box, Input, Text } from '@chakra-ui/react';
 import React from 'react';
+
+import { Box, Input, Text } from '@chakra-ui/react';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+
 import Button from '../../componenets/Button/Button';
 import { NewHouse } from '../../state/types/housesTypes';
 import { addNewHouse } from '../../state/actions/housesActions';
-import { useHistory } from 'react-router-dom';
 
 const HousesAdder = () => {
   const dispatch = useDispatch();

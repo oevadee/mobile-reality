@@ -1,6 +1,7 @@
 import React from 'react';
-import Button from '../Button/Button';
 import './BasicTextPanel.scss';
+
+import Button from '../Button/Button';
 
 const BasicTextPanel = () => {
   return (
