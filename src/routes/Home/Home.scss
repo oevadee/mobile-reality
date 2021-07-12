@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+
   .home__fourPanelSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
