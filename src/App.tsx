@@ -24,6 +24,7 @@ function App() {
   if (data) {
     dispatch(setHouses(data?.data.results));
   }
+
   return (
     <Router>
       <Route component={Home} path='/' exact />
